@@ -7,3 +7,9 @@
 6、修改readme(Such as add new word)
 7、运行 git status查看仓库状态（是否修改/是否提交）
 查看具体修改项可以用git diff命令
+8、使用 git log 查看提交版本信息
+9、回退版本 git reset --haed HEAD^   git reset --hard 1094a(commit id前几位)
+10、撤销修改 命令git checkout --readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销
+新版本中为 git restore 文件名
+11、删除文件 如果添加到工作区  git rm test.txt    git commit test.txt
+					没有添加有工作区 git rm test.txt/文件管理器中删除
