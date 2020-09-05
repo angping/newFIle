@@ -13,3 +13,15 @@
 新版本中为 git restore 文件名
 11、删除文件 如果添加到工作区  git rm test.txt    git commit test.txt
 					没有添加有工作区 git rm test.txt/文件管理器中删除
+					
+					
+远程仓库：
+1、注册账号
+2、创建SSH Key 运行 ssh-keygen -t rsa -C "youremail@example.com"
+可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
+3、登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
+4、在GitHub上建立仓库
+5、根据GitHub的提示，在本地的 it remote add origin git@github.com:michaelliao/***自己的.git仓库下运行命令：
+下一步 git push -u origin master
+6、此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
