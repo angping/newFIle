@@ -1,0 +1,9 @@
+1、Windows 系统在合适的地方建立空目录（找到位置后打开GIT BASH Here）
+2、通过git init(initialize)把这个目录变成Git可以管理的仓库
+3、在空文件夹中创建新文件（readme.txt）
+4、用git add把文件添加到仓库 git add readme.txt
+5、用命令 git commit 把文件提交到仓库（可以多次添加，一次提交文件）
+ git commit -m "改变的信息（说明）"
+6、修改readme(Such as add new word)
+7、运行 git status查看仓库状态（是否修改/是否提交）
+查看具体修改项可以用git diff命令
